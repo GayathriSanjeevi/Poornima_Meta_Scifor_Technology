@@ -1,0 +1,57 @@
+Git and GitHub
+
+Git --> Version control system
+ 
+--> It is a method to save the history of your files and also the changes made in it.
+--> Can create files in git and can push to GitHub for collaboration
+
+1: Install git
+to know the version git --version
+
+2: To add configuration
+git config --global user.name "user name"
+git config --global user.email "email id"
+
+3: To edit the configuration 
+git config --global --edit
+
+To create a new folder/directory --> mkdir <dir name>
+To switch to that directory      --> cd <dir name>
+
+GitHub Repository: The project that can be tracked through git
+
+1. To make new folder in git repository --> git init --> it creates an empty repository
+2. To view the changes made in the repository --> git status
+3. To track a file --> git add filename
+It can work with any type of files
+4. Staging Area: Area where you can hold file changes before finally committing
+to enter into a staging area --> git add
+to come out of staging area and entering into commit stage --> git commit -m "message"
+5. To see the amount of commits until now --> git.log
+shows who did and when
+each commit has a separate hash code
+6. Creates branches --> default starts with master
+to create a new branch git branch "branch name"
+to switch between the branches --> git checkout "branch name"
+
+7. File in 1 branch will not be known by another branches
+to give access --> git merge "branch name"
+
+If git neednot track the file, create a new folder using touch.gitignore --> all the files in this will not be accessed by anyone
+
+8.To push this into GitHub repository,
+can use
+git remote add origin GitHubrepopath
+git push -u origin main
+
+9. Can invite collaborators for the created repository 
+10. Fork in GitHub repository --> creates clone of it in which one can do changes in the repository --> will not change the original files
+11. Pull request --> Pull requests allow users to contribute changes, take suggestions and make discussions.
+
+
+
+
+
+
+
+
