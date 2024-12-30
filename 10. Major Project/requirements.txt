@@ -2,4 +2,4 @@ sklearn
 flask
 pandas
 numpy
-pickl
+pickle
