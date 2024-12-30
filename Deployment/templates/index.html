@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction System</title>
+</head>
+<body>
+    <h1>Enter the details of the applicant</h1>
+    <form action= "{{ url_for('result') }}" method="post">
+        <label for="input1">No of dependents:</label>
+        <input type="number" id="input1" name="input1" required>
+        <br><br>
+        <label for="input2"> Annual Income:</label>
+        <input type="number" id="input2" name="input2" required>
+        <br><br>
+        <label for="input3"> Loan Amount: </label>
+        <input type="number" id="input3" name="input3" required>
+        <br><br>
+        <label for="input4">Loan term: </label>
+        <input type="number" id="input4" name="input4" required>
+        <br><br>
+        <label for="input5"> Enter valid Cibil_score:</label>
+        <input type="number" id="input5" name="input5" required>
+        <br><br>
+        <label for="input6">Residential Assets Value:</label>
+        <input type="number" id="input6" name="input6" required>
+        <br><br>
+        <label for="input7"> Commercial Assets Value: </label>
+        <input type="number" id="input7" name="input7" required>
+        <br><br>
+        <label for="input8">Luxury Assets Value</label>
+        <input type="number" id="input8" name="input8" required>
+        <br><br>
+        <label for="input9">Bank Assets Value</label>
+        <input type="number" id="input9" name="input9" required>
+        <br><br>
+        <label for="input10">Select Education: Enter 0 for Graduate and 1 for Not a graduate</label></p>
+        <input type="number" id="input10" name="input10" required>
+
+        <br><br>
+        <label for="input11">Enter Self-employed or not: 0 for No, 1 for Yes </label> 
+        <input type="number" id="input11" name="input11" required>
+        
+        <br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
